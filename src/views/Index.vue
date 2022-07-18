@@ -6,15 +6,15 @@
   
   const { increment, decrement } = store
   const { count } = storeToRefs(store)
-
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center fixed top-0 left-0 w-full h-full">
-    <button class="btn text-lg">Hello</button>
-    <div class="mt-4 flex">
+  <div class="flex flex-col items-center justify-center fixed top-0 left-0 w-full h-full text-white">
+    <img src="@/assets/images/logo.png" alt="vue" class="w-40">
+    <h1 class="mt-4 text-2xl">Hello world!</h1>
+    <div class="mt-10 flex">
       <button class="btn text-lg" @click="decrement">-</button>
-      <div class="text-white flex h-full px-4 items-center">
+      <div class="flex h-full px-4 items-center">
         {{ count }}
       </div>
       <button class="btn text-lg" @click="increment">+</button>
